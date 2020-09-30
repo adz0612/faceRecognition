@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import dlib
 from math import hypot
-
-cap = cv2.VideoCapture(0)
+# Doesnt seem to work. cv1
+cap = cv1.VideoCapture(0)
 
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("/Users/aditya_jain/PycharmProjects/faceDetection/shape_predictor_68_face_landmarks1.dat")
@@ -27,8 +27,8 @@ def get_blinking_ratio(eye_points, facial_landmarks):
 
     ratio = hor_line_lenght / ver_line_lenght
     return ratio
-
-while True:
+# Doesnt seem to work. false
+while False:
     _, frame = cap.read()
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
