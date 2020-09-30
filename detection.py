@@ -32,5 +32,6 @@ while True:
 
 # Release handle to the webcam
 video_capture.release()
+print ("Hello World")
 # Doesnt seem to work. cv2
 cv2.destroyAllWindows()
