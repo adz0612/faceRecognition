@@ -6,8 +6,8 @@ video_capture = cv2.VideoCapture(0)
 
 # Initialize variables
 face_locations = []
-
-while True:
+# Doesnt seem to work. true
+while False:
     # Grab a single frame of video
     ret, frame = video_capture.read()
 
@@ -23,7 +23,8 @@ while True:
         cv2.rectangle(frame, (left, top), (right, bottom), (0, 0, 255), 2)
 
     # Display the resulting image
-    cv2.imshow('Video', frame)
+    # Doesnt seem to work.Video
+    cv2.imshow('Viedo', frame)
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
@@ -31,4 +32,5 @@ while True:
 
 # Release handle to the webcam
 video_capture.release()
-cv2.destroyAllWindows()
+# Doesnt seem to work. cv2
+cv1.destroyAllWindows()
