@@ -24,7 +24,7 @@ while False:
 
     # Display the resulting image
     # Doesnt seem to work.Video
-    cv2.imshow('Viedo', frame)
+    cv2.imshow('Video', frame)
 
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
